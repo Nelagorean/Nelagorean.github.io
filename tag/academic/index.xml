@@ -5,12 +5,63 @@
     <link>https://example.com/tag/academic/</link>
       <atom:link href="https://example.com/tag/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Academic</title>
       <link>https://example.com/tag/academic/</link>
     </image>
+    
+    <item>
+      <title>Пост по прошедшей неделе</title>
+      <link>https://example.com/post/last_week/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/last_week/</guid>
+      <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
+&lt;p&gt;Если быть честной, то я не особо помню что там происходило, но я всё равно что-нибудь напишу.&lt;/p&gt;
+&lt;h2 id=&#34;понедельник&#34;&gt;Понедельник&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Отсидела две пары дистанционно&lt;/li&gt;
+&lt;li&gt;Позавтракала&lt;/li&gt;
+&lt;li&gt;Сделала д/з&lt;/li&gt;
+&lt;li&gt;Сходила в душ&lt;/li&gt;
+&lt;li&gt;Легла спать&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;вторник&#34;&gt;Вторник&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Сходила на пары&lt;br&gt;
+Вроде ничего такого в этот день нне произошло&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;среда&#34;&gt;Среда&lt;/h2&gt;
+&lt;p&gt;Долгожданное 8е марта&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Поздравила кого нужно с 8м марта&lt;/li&gt;
+&lt;li&gt;Сходила с подругами в корейское кафе (не особо понравилось, если что назвывается кортайгер&lt;/li&gt;
+&lt;li&gt;Поссорилась с парнем, долго ссорились, а потом, уже ближе к ночи, все дообсудил и помирились так сказать (не уверена, что это будет кто-то читать, потому и могу писать всё, что захочу)0))00) )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;четверг&#34;&gt;Четверг&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Пришла на пары, и получила свои баллы на технологии программирования&lt;/li&gt;
+&lt;li&gt;Мальчики нам подарили милые открытки и вкусные кексики, а т.к. у моей подруги непереносимость лактозы, то я съела вдвое больше кексиков (2) и причем один быд с шоколадной начинкой, а другой - с фруктовой&lt;/li&gt;
+&lt;li&gt;Потом я пришла домой, &lt;em&gt;что-то происходило&lt;/em&gt;, т легла спать&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;пятница&#34;&gt;Пятница&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Проснулась, сделал дз по английскому и пошла на пары&lt;/li&gt;
+&lt;li&gt;Был концерт у модульников, поле которого нас отпустили домой и мы пошли кайфоват. да, эта новость очень обрадовала, а ещ светило солнышко&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;суббота&#34;&gt;Суббота&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;В этотт день мы с Артёмом посмотрели фильм &amp;ldquo;Хищник&amp;rdquo;, в целом нормально, не знаю&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;воскреенье&#34;&gt;Воскреенье&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Утром я пошла на тренировку, которая отменилась, на улице шёл дождь и и вся промокла, вместо тренировки сходила в котомку и посмотрела чтотам естть&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На этом пожалуй всё, всем спаибо за внимание, до встречи на 3м этапе ИП&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Управление версиями. Git.</title>
