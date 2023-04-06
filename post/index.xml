@@ -64,6 +64,25 @@
     </item>
     
     <item>
+      <title>Пост по прошедшей неделе 2.0</title>
+      <link>https://example.com/post/last_week_2/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/last_week_2/</guid>
+      <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
+&lt;p&gt;Хорошая неделяв общем и целом.&lt;/p&gt;
+&lt;h1 id=&#34;чуть-более-детальное-описание&#34;&gt;Чуть более детальное описание&lt;/h1&gt;
+&lt;p&gt;В понедельник всё было хорошо, во вторник я пропустила пары, зато помогла подруге с к/р по английскому. В среду к/р была уже у меня, я думаю, что написала её хорошо, посмотрим. Сегодня (четверг) я получила 15 баллов за код, тоже очень хорошая новость.
+Надеюсь, неделя закончися хорошо, было весьма солнечно, что не может не радовать.
+Поскорее бы лето, сдать сессию и уехать домой)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На этом пожалуй всё, всем спаибо за внимание, до встречи на 4м этапе ИП&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Управление версиями. Git.</title>
       <link>https://example.com/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
@@ -179,7 +198,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-491267835&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-546918327&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -189,7 +208,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-491267835&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-546918327&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
