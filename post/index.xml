@@ -13,6 +13,35 @@
     </image>
     
     <item>
+      <title>Оформление отчета</title>
+      <link>https://example.com/post/making_report/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/making_report/</guid>
+      <description>&lt;h1 id=&#34;что-такое-отчет&#34;&gt;Что такое отчет?&lt;/h1&gt;
+&lt;p&gt;Отчёт — это структурированное сообщение о результатах вашей работы, которое вы делаете в устной или письменной форме.&lt;/p&gt;
+&lt;p&gt;Обычно в отчете должны присутствовать следующие элементы:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Цель&lt;/li&gt;
+&lt;li&gt;Задачи&lt;/li&gt;
+&lt;li&gt;Теоретическое введение&lt;/li&gt;
+&lt;li&gt;Описание выполнения работы&lt;/li&gt;
+&lt;li&gt;Итоги&lt;/li&gt;
+&lt;li&gt;Список литературы&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;как-оформлять-отчет&#34;&gt;Как оформлять отчет?&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Перед выполнением работы обычно уже есть поставленная цель, поэтому ее и следует записать в отчет. Главное корректно, грамотно и кратко ее сформулировать.&lt;/li&gt;
+&lt;li&gt;На основе цели перед Вами выдвигаются (или Вы сами составляете) задачи, которые необходимо выполнить, чтобы достичь желаемого результата. Задачи лучше написать в отчете под отельными номерами (также можно выделять подпункты, если требуется).&lt;/li&gt;
+&lt;li&gt;В теоретическом введение надо написать информацию, связанную с Вашей работой. Это могут быть ключевые определения вместе с примерами или же просто описание какого-либо процесса/действия/объекта.&lt;/li&gt;
+&lt;li&gt;Далее Вам нужно описать все этапы работы (иногда давая пояснения), желательно подкреплять эти этапы картинками (их нужно подписать и расставить ссылки на них в нужных местах).&lt;/li&gt;
+&lt;li&gt;Итоги формулируются в соответствии с целью. Они тоже должны быть достаточно краткими.&lt;/li&gt;
+&lt;li&gt;Источники, откуда Вы брали информацию для теоретического введения, необходимо указать в конце Вашего отчета (они должны быть оформлены по ГОСТу).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Пост по прошедшей неделе</title>
       <link>https://example.com/post/last_week/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
@@ -78,6 +107,23 @@
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;На этом пожалуй всё, всем спаибо за внимание, до встречи на 4м этапе ИП&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пост по прошедшей неделе 3.0</title>
+      <link>https://example.com/post/last_week_3/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/last_week_3/</guid>
+      <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
+&lt;p&gt;Странная неделя&lt;/p&gt;
+&lt;h1 id=&#34;чуть-более-детальное-описание&#34;&gt;Чуть более детальное описание&lt;/h1&gt;
+&lt;p&gt;Начало было неплохим, получила максимум коллоквиум и всё такое, но в четверг узнала одну неприятную новость, которая испортила мне настроения на два дня, в субботу было получше, а в воскресенье был день рождения у моей подруги и ко мне пришли два гостя на немного, мы поболтали и они ушли. Больше мне нечего сказать&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На этом пожалуй всё, всем спасибо за внимание, до встречи на 5м этапе ИП&lt;/p&gt;
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
@@ -229,7 +275,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-542617389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-845729136&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -239,7 +285,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-542617389&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-845729136&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
