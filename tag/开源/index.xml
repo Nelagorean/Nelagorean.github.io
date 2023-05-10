@@ -5,12 +5,46 @@
     <link>https://example.com/tag/%E5%BC%80%E6%BA%90/</link>
       <atom:link href="https://example.com/tag/%E5%BC%80%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
     <description>开源</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>开源</title>
       <link>https://example.com/tag/%E5%BC%80%E6%BA%90/</link>
     </image>
+    
+    <item>
+      <title>Programming languages C</title>
+      <link>https://example.com/post/programming-_languages_c/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/programming-_languages_c/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-the-c-language&#34;&gt;Introduction to the C language&lt;/h1&gt;
+&lt;p&gt;The C programming language was created by Dennis Ritchie of AT&amp;amp;T Bell Laboratories as a high-level programming language for developing the UNIX operating system. Currently, the language is widely used in various fields. C is especially popular with system programmers because it allows you to write programs simply and concisely.&lt;/p&gt;
+&lt;p&gt;The main book describing the C language is the book by Brian Kernighan and Dennis Ritchie “The C Programming Language” (1978). Books on the C language were written by Bolon (1986), Gehani (1984), Hancock and Krieger (1986), Harbison and Steele (1984) and many others.&lt;/p&gt;
+&lt;p&gt;In this appendix, we will try to give a fairly complete introduction to C, so that those who are familiar with high-level languages such as Pascal, PL/1 or Modula 2 will be able to understand most of the MINIX code given in this book. C features that are not used in MINIX are not discussed here. Numerous subtle points are omitted. The emphasis is on reading C programs, not writing code.
+Basics of the C language&lt;/p&gt;
+&lt;h1 id=&#34;basics-of-the-c-language&#34;&gt;Basics of the C language&lt;/h1&gt;
+&lt;p&gt;A C program consists of a set of procedures (often called functions, even if they do not return values). These procedures contain declarations, operators, and other elements that together tell the computer what to do. Figure A-1 shows a small procedure in which three integer variables are declared and values are assigned to them. The name of the procedure is main. The procedure has no formal parameters, as indicated by the absence of any identifiers between the brackets behind the procedure name. The procedure body is enclosed in curly brackets ( { } ). This example shows that C has variables, and that these variables must be declared before use. C also has operators, in this example these are assignment operators. All operators must end with a semicolon (unlike Pascal, who uses colons between operators, not after them). Comments start with the characters &amp;quot; / &amp;quot; and end with the characters “ /” and can take up several lines.
+Basic Data types&lt;/p&gt;
+&lt;h1 id=&#34;basic-data-types&#34;&gt;Basic Data types&lt;/h1&gt;
+&lt;p&gt;Programs operate with various data, which can be simple and structured. Simple data is integers and real numbers, symbols and pointers (addresses of objects in memory). Integers do not have, and real numbers have a fractional part. Structured data is arrays and structures; they will be discussed below.&lt;/p&gt;
+&lt;p&gt;The language distinguishes between the concepts of “data type” and “type modifier”. A data type is, for example, an integer, and a modifier is signed or unsigned. A signed integer will have both positive and negative values, and an unsigned integer will have only positive values. In the C language, five basic types can be distinguished, which are defined by the following keywords: char - character; int - whole; float - real; double - real double precision; void - doesn’t matter.&lt;/p&gt;
+&lt;p&gt;Let’s give them a brief description:&lt;/p&gt;
+&lt;p&gt;A variable of type char has a size of 1 byte, its values are various characters from the code table, for example: ‘f’, ‘:’, ‘j’ (when written in the program, they are enclosed in single quotes). The size of an int type variable is not defined in the C language standard. In most programming systems, the size of an int variable corresponds to the size of an entire machine word. For example, in compilers for 16-bit processors, an int variable has a size of 2 bytes. In this case, the signed values of this variable can range from -32768 to 32767. The float keyword allows you to define variables of real type. Their values have a fractional part separated by a dot, for example: -5.6, 31.28, etc. Real numbers can also be written in floating point form, for example: -1.09e+4. The number before the symbol “e” is called the mantissa, and after the “e” - the order. A variable of the float type occupies 32 bits in memory. It can take values in the range from 3.4e-38 to 3.4e+38. The double keyword allows you to define a double-precision real variable. It takes up twice as much space in memory as a float variable (i.e. its size is 64 bits). A double variable can take values in the range from 1.7e-308 to 1.7e+308. The void keyword (meaningless) is used to neutralize the value of an object, for example, to declare a function that does not return any values. An object of some basic type can be modified. For this purpose, special keywords called modifiers are used. The C ANSI standard has the following type modifiers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unsigned&lt;/li&gt;
+&lt;li&gt;signed&lt;/li&gt;
+&lt;li&gt;short&lt;/li&gt;
+&lt;li&gt;long&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Modifiers are written before type specifiers, for example: unsigned char. If a specifier is omitted after the modifier, then the compiler assumes that this specifier is int. Thus, the following lines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;long a;&lt;/li&gt;
+&lt;li&gt;long int a;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;are identical and define object a as a long integer. Table 1 illustrates possible combinations of modifiers (unsigned, signed, short, long) with specifiers (char, int, float and double), and also shows the size and range of object values (for 16-bit compilers).&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Оформление отчета</title>
@@ -116,6 +150,23 @@
       <link>https://example.com/post/last_week_3/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/post/last_week_3/</guid>
+      <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
+&lt;p&gt;Странная неделя&lt;/p&gt;
+&lt;h1 id=&#34;чуть-более-детальное-описание&#34;&gt;Чуть более детальное описание&lt;/h1&gt;
+&lt;p&gt;Начало было неплохим, получила максимум коллоквиум и всё такое, но в четверг узнала одну неприятную новость, которая испортила мне настроения на два дня, в субботу было получше, а в воскресенье был день рождения у моей подруги и ко мне пришли два гостя на немного, мы поболтали и они ушли. Больше мне нечего сказать&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На этом пожалуй всё, всем спасибо за внимание, до встречи на 5м этапе ИП&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пост по прошедшей неделе 4.0</title>
+      <link>https://example.com/post/last_week_4/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/last_week_4/</guid>
       <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
 &lt;p&gt;Странная неделя&lt;/p&gt;
 &lt;h1 id=&#34;чуть-более-детальное-описание&#34;&gt;Чуть более детальное описание&lt;/h1&gt;

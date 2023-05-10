@@ -33,6 +33,134 @@
     </item>
     
     <item>
+      <title>Programming languages C</title>
+      <link>https://example.com/post/programming-_languages_c/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/programming-_languages_c/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-the-c-language&#34;&gt;Introduction to the C language&lt;/h1&gt;
+&lt;p&gt;The C programming language was created by Dennis Ritchie of AT&amp;amp;T Bell Laboratories as a high-level programming language for developing the UNIX operating system. Currently, the language is widely used in various fields. C is especially popular with system programmers because it allows you to write programs simply and concisely.&lt;/p&gt;
+&lt;p&gt;The main book describing the C language is the book by Brian Kernighan and Dennis Ritchie “The C Programming Language” (1978). Books on the C language were written by Bolon (1986), Gehani (1984), Hancock and Krieger (1986), Harbison and Steele (1984) and many others.&lt;/p&gt;
+&lt;p&gt;In this appendix, we will try to give a fairly complete introduction to C, so that those who are familiar with high-level languages such as Pascal, PL/1 or Modula 2 will be able to understand most of the MINIX code given in this book. C features that are not used in MINIX are not discussed here. Numerous subtle points are omitted. The emphasis is on reading C programs, not writing code.
+Basics of the C language&lt;/p&gt;
+&lt;h1 id=&#34;basics-of-the-c-language&#34;&gt;Basics of the C language&lt;/h1&gt;
+&lt;p&gt;A C program consists of a set of procedures (often called functions, even if they do not return values). These procedures contain declarations, operators, and other elements that together tell the computer what to do. Figure A-1 shows a small procedure in which three integer variables are declared and values are assigned to them. The name of the procedure is main. The procedure has no formal parameters, as indicated by the absence of any identifiers between the brackets behind the procedure name. The procedure body is enclosed in curly brackets ( { } ). This example shows that C has variables, and that these variables must be declared before use. C also has operators, in this example these are assignment operators. All operators must end with a semicolon (unlike Pascal, who uses colons between operators, not after them). Comments start with the characters &amp;quot; / &amp;quot; and end with the characters “ /” and can take up several lines.
+Basic Data types&lt;/p&gt;
+&lt;h1 id=&#34;basic-data-types&#34;&gt;Basic Data types&lt;/h1&gt;
+&lt;p&gt;Programs operate with various data, which can be simple and structured. Simple data is integers and real numbers, symbols and pointers (addresses of objects in memory). Integers do not have, and real numbers have a fractional part. Structured data is arrays and structures; they will be discussed below.&lt;/p&gt;
+&lt;p&gt;The language distinguishes between the concepts of “data type” and “type modifier”. A data type is, for example, an integer, and a modifier is signed or unsigned. A signed integer will have both positive and negative values, and an unsigned integer will have only positive values. In the C language, five basic types can be distinguished, which are defined by the following keywords: char - character; int - whole; float - real; double - real double precision; void - doesn’t matter.&lt;/p&gt;
+&lt;p&gt;Let’s give them a brief description:&lt;/p&gt;
+&lt;p&gt;A variable of type char has a size of 1 byte, its values are various characters from the code table, for example: ‘f’, ‘:’, ‘j’ (when written in the program, they are enclosed in single quotes). The size of an int type variable is not defined in the C language standard. In most programming systems, the size of an int variable corresponds to the size of an entire machine word. For example, in compilers for 16-bit processors, an int variable has a size of 2 bytes. In this case, the signed values of this variable can range from -32768 to 32767. The float keyword allows you to define variables of real type. Their values have a fractional part separated by a dot, for example: -5.6, 31.28, etc. Real numbers can also be written in floating point form, for example: -1.09e+4. The number before the symbol “e” is called the mantissa, and after the “e” - the order. A variable of the float type occupies 32 bits in memory. It can take values in the range from 3.4e-38 to 3.4e+38. The double keyword allows you to define a double-precision real variable. It takes up twice as much space in memory as a float variable (i.e. its size is 64 bits). A double variable can take values in the range from 1.7e-308 to 1.7e+308. The void keyword (meaningless) is used to neutralize the value of an object, for example, to declare a function that does not return any values. An object of some basic type can be modified. For this purpose, special keywords called modifiers are used. The C ANSI standard has the following type modifiers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unsigned&lt;/li&gt;
+&lt;li&gt;signed&lt;/li&gt;
+&lt;li&gt;short&lt;/li&gt;
+&lt;li&gt;long&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Modifiers are written before type specifiers, for example: unsigned char. If a specifier is omitted after the modifier, then the compiler assumes that this specifier is int. Thus, the following lines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;long a;&lt;/li&gt;
+&lt;li&gt;long int a;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;are identical and define object a as a long integer. Table 1 illustrates possible combinations of modifiers (unsigned, signed, short, long) with specifiers (char, int, float and double), and also shows the size and range of object values (for 16-bit compilers).&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Starting a Project</title>
+      <link>https://example.com/project/example/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/example/</guid>
+      <description>&lt;h1 id=&#34;step-1-get-an-understanding-of-the-subject-matter&#34;&gt;Step 1: Get an understanding of the subject matter&lt;/h1&gt;
+&lt;p&gt;You can’t plan a project without a good understanding of the field. In this section I’ll show you how to become an expert in a few days.&lt;/p&gt;
+&lt;p&gt;When I took over my first IT project, everything was new. I had to deal with servers, storage, backup and more. The problem was: I didn’t know anything about these things. So, I sat down with each of my specialists and asked: “Tell me, what’s all that stuff about?” This was helpful because I got a picture of their work, and I understood how a backup system should be planned.&lt;/p&gt;
+&lt;p&gt;Similar to my approach, you should try to get a good understanding of the topic.&lt;/p&gt;
+&lt;p&gt;How do you become an expert in a new field?&lt;/p&gt;
+&lt;p&gt;By reading articles and by talking to a lot of people:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read relevant studies, articles or books&lt;/li&gt;
+&lt;li&gt;Talk to people in your organization&lt;/li&gt;
+&lt;li&gt;Talk to experts in the field&lt;/li&gt;
+&lt;li&gt;Post questions in online discussion forums&lt;/li&gt;
+&lt;li&gt;Talk to people who have done similar projects (contact other companies if necessary. You’ll get VERY valuable feedback here.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Focus your research on those points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What are the main tasks in such a project?&lt;/li&gt;
+&lt;li&gt;How do the tasks relate to each other? What needs to be done first, second and so on?&lt;/li&gt;
+&lt;li&gt;What tasks are most difficult?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;step-2-define-the-project-goal&#34;&gt;Step 2: Define the project goal&lt;/h1&gt;
+&lt;p&gt;The project goal is a summary of the project’s purpose: What should the project achieve? A goal provides clarity and has a motivational impact on the team.&lt;/p&gt;
+&lt;p&gt;The best way to come up with a project goal is by asking: “What positive result do we expect from this project?”. Invite the customer and the project sponsor to discuss their expectations. Then try to create a short statement (1-3 sentences) that summarizes the goal.&lt;/p&gt;
+&lt;h1 id=&#34;step-3-make-a-list-of-tasks-and-deliverables&#34;&gt;Step 3: Make a list of tasks and deliverables&lt;/h1&gt;
+&lt;p&gt;Being in charge of a project can feel overwhelming. The best way to overcome the initial paralysis is by breaking the project down into small chunks.
+During this step you want to look at two things:&lt;/p&gt;
+&lt;p&gt;First, make a list of all tasks and project deliverables that have to be worked on to achieve the project goal. No task should be missed. Even if it’s small. Your second goal should be to understand in what order these tasks have to be executed.&lt;/p&gt;
+&lt;p&gt;Try to imagine the flow of the project from start to finish. Then list all the things that need to be done (like in a brainstorming session). Start broadly and then go into detail.&lt;/p&gt;
+&lt;p&gt;For more complex projects I suggest creating a work breakdown structure (WBS). This is a graphical diagram where deliverables are broken down into smaller manageable pieces.&lt;/p&gt;
+&lt;p&gt;Knowing what the necessary tasks are and who is going to be in charge is a VERY critical step. You don’t want find out six months from now that you forgot to include somebody whose involvement is required. The consequences could be terrible.&lt;/p&gt;
+&lt;p&gt;It helps to break down tasks by project phase:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;preparatory tasks: project planning and conceptual work&lt;/li&gt;
+&lt;li&gt;implementation tasks: where the product of the project is built or developed&lt;/li&gt;
+&lt;li&gt;closing tasks: tasks to be done at the end of the project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;step-4-identify-the-stakeholders&#34;&gt;Step 4: Identify the stakeholders&lt;/h1&gt;
+&lt;p&gt;Stakeholders are the people and groups you need to keep in the loop. Either because they are actively involved in the project. Or because they have to approve or oversee the project work.&lt;/p&gt;
+&lt;p&gt;Imagine you’re taking a trip by plane: First you take a cab to the airport. Then somebody at the check-in counter will validate your reservation, accept your baggage and issue a ticket. Next, you’ll have to get through security. A TSA officer is going to check your baggage (and every corner of your body).&lt;/p&gt;
+&lt;p&gt;What I want to show with this analogy: The cab driver, the airline staff, the TSA officer, they all have an important role in your journey. You can’t get from A to B if you skip one of them. They are like stakeholders in a project. You can’t reach accomplish your project goal if you don’t involve each of these people.&lt;/p&gt;
+&lt;p&gt;Stakeholders fall into 3 categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;users: the people who are going to use the product of your project&lt;/li&gt;
+&lt;li&gt;providers: people actively working for the project (internal and external)&lt;/li&gt;
+&lt;li&gt;approvers: people who have to approve what the project is doing (management, government entities, regulators etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here’s how you can find out who these people are:&lt;/p&gt;
+&lt;p&gt;Ask as many people in your organization as possible: “Hey, who do you think I should involve?”. “Who else is involved in this process?”, “What are the people who are using this product?”&lt;/p&gt;
+&lt;p&gt;Another advice from me: Make your project known to everyone in the organization. In my last company we had a meeting of the directors every quarter. Sure enough, I took the opportunity to inform everyone about the project I was planning. That was really helpful, because the directors would give me helpful pointers: “Please talk to us, because we are also using this process that you’re planning to change.”&lt;/p&gt;
+&lt;h1 id=&#34;step-5-create-a-resource-plan&#34;&gt;Step 5: Create a resource plan&lt;/h1&gt;
+&lt;p&gt;How many hours do John, Linda and Pete have to work on your project? That’s what you define in a resource plan. It shows the monthly effort that team members and departments have to contribute.&lt;/p&gt;
+&lt;p&gt;Other departments who provide resources for your project need to know the approximate effort they have to contribute. That is, how many hours or days each colleague has to contribute per week / month.&lt;/p&gt;
+&lt;p&gt;Here is a simple example of a resource plan. I usually put in percentages and later multiply the total by the number of working days each month (20 on average) to get the number of workdays. For example, 0.8 means you are using the resource 80% in a specific month. 0.8 x 20 = 16 days.&lt;/p&gt;
+&lt;h1 id=&#34;step-6-create-a-project-schedule&#34;&gt;Step 6: Create a project schedule&lt;/h1&gt;
+&lt;p&gt;The earlier steps were mostly about thinking and talking. Now it’s time to actually put something on paper. It’s time to create to create a project timeline.&lt;/p&gt;
+&lt;p&gt;First, download my project plan template. It’s a simple Excel template that you can see in the image below. Then, take the insights from your initial research and the discussions with your team and write down the main project tasks in the appropriate order.&lt;/p&gt;
+&lt;h1 id=&#34;step-7-create-a-project-budget&#34;&gt;Step 7: Create a project budget&lt;/h1&gt;
+&lt;p&gt;Now let’s create a project budget. You must have your effort and cost estimations ready. Creating a budget isn’t difficult at all. And I have a budget template for you. Use it to plan and track project cost.&lt;/p&gt;
+&lt;p&gt;Your cost estimation (project budget) should give the approximate cost per cost category.&lt;/p&gt;
+&lt;p&gt;Cost categories that go into a project budget:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;labor cost&lt;/li&gt;
+&lt;li&gt;material cost&lt;/li&gt;
+&lt;li&gt;service fees&lt;/li&gt;
+&lt;li&gt;depreciation&lt;/li&gt;
+&lt;li&gt;travel cost&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Again, keep it simple. Put everything into an Excel worksheet and add up the numbers. If you are required to provide a breakdown by month or by specific categories, then do so.&lt;/p&gt;
+&lt;p&gt;To calculate the cost of internal resources, you usually multiply the number of hours by a pre-defined hourly rate. Your HR department or the guys from internal accounting can give you the hourly rates of your organization. For external resources you anyway pay a fixed rate per hour or day which you can find on the quotation.&lt;/p&gt;
+&lt;p&gt;Material cost is the value of goods and services that have to be procured as part of the project. What items go into this category really depends on the industry and type of the project.&lt;/p&gt;
+&lt;p&gt;Very often projects require investments in buildings, machinery, software or other items. An investment is shown on the balance sheet and it is depreciated over a number of years. You have to discuss the numbers with your accounting department, as they have to make sure the investment is correctly accounted for on the financial statements.&lt;/p&gt;
+&lt;h1 id=&#34;step-8-hold-a-project-kick-off-meeting&#34;&gt;Step 8: Hold a project kick-off meeting&lt;/h1&gt;
+&lt;p&gt;The best way to inform everybody involved is through a project kickoff meeting. These are the meetings you schedule at the beginning of every project to present the project timeline, goal and all the organizational matters, like who is involved, where does the project take place, how often you hold update meetings, your project communication plan etc.&lt;/p&gt;
+&lt;p&gt;Usually there is a wider audience that should know about your project.&lt;/p&gt;
+&lt;p&gt;Prepare a set of slides which you can send out for such purposes, along with a note saying: If you have any questions, please contact me.&lt;/p&gt;
+&lt;h1 id=&#34;step-9-dont-forget-the-organizational-stuff&#34;&gt;Step 9: Don’t forget the organizational stuff&lt;/h1&gt;
+&lt;p&gt;The following section may only be relevant if you’re working in a corporate environment. To be able to do your job, you are dependent on certain resources. :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;important people (decision makers)&lt;/li&gt;
+&lt;li&gt;conference rooms&lt;/li&gt;
+&lt;li&gt;individual project team members&lt;/li&gt;
+&lt;li&gt;other items like hardware or tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You’ll need those resources sooner or later in your project. The thing to remember is: you may not get a hold of them if you wait until the last moment where you need them. Just think of managers who need to be involved to get approval from. Their calendars are usually blocked a long time in advance.&lt;/p&gt;
+&lt;p&gt;So what you do is you reserve time many weeks or even months before you need them. Let’s say you plan to hold a monthly team meeting with 20+ people, you reserve an appropriately sized meeting room now for the entire duration of your project. If you already know you’ll need your director’s signature at the end of July, schedule an appointment through his assistant.&lt;/p&gt;
+&lt;p&gt;As for your team members, you usually don’t block their time. But I wanted to know when they were off. So I asked everybody to enter their vacation time in an Excel. That way I could see if there were any conflicts, such as somebody being absent in a critical phase of the project.&lt;/p&gt;
+&lt;p&gt;Think of all the resources and tools you might need in the course of your project, and make sure you have access to them when needed!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Оформление отчета</title>
       <link>https://example.com/post/making_report/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
@@ -136,6 +264,23 @@
       <link>https://example.com/post/last_week_3/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/post/last_week_3/</guid>
+      <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
+&lt;p&gt;Странная неделя&lt;/p&gt;
+&lt;h1 id=&#34;чуть-более-детальное-описание&#34;&gt;Чуть более детальное описание&lt;/h1&gt;
+&lt;p&gt;Начало было неплохим, получила максимум коллоквиум и всё такое, но в четверг узнала одну неприятную новость, которая испортила мне настроения на два дня, в субботу было получше, а в воскресенье был день рождения у моей подруги и ко мне пришли два гостя на немного, мы поболтали и они ушли. Больше мне нечего сказать&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На этом пожалуй всё, всем спасибо за внимание, до встречи на 5м этапе ИП&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пост по прошедшей неделе 4.0</title>
+      <link>https://example.com/post/last_week_4/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/last_week_4/</guid>
       <description>&lt;h1 id=&#34;описание-прошедшей-недели&#34;&gt;Описание прошедшей недели&lt;/h1&gt;
 &lt;p&gt;Странная неделя&lt;/p&gt;
 &lt;h1 id=&#34;чуть-более-детальное-описание&#34;&gt;Чуть более детальное описание&lt;/h1&gt;
@@ -295,7 +440,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-592647831&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-653179482&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -305,7 +450,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-592647831&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-653179482&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -780,19 +925,6 @@ $$&lt;/p&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Project</title>
-      <link>https://example.com/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
     </item>
     
